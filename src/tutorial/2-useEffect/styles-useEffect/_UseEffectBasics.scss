@@ -1,0 +1,15 @@
+@use "../../scss/components/" as c;
+
+.basics {
+  text-align: center;
+  padding-block: 4rem;
+
+  .value {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .btn {
+    @include c.btn-bg(rgb(54, 100, 239));
+  }
+}

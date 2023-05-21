@@ -1,0 +1,49 @@
+@use "../../scss/abstracts/" as a;
+
+.prop-types-section {
+  width: 90vw;
+  margin-inline: auto;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+
+  .title {
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  .products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(a.px-rem(300), 1fr));
+    gap: 1.5rem;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+.single-product {
+  background: #fff;
+  border-radius: a.br(medium);
+
+  .image {
+    height: a.px-rem(250);
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-top-left-radius: a.br(medium);
+    border-top-right-radius: a.br(medium);
+  }
+
+  .info {
+    padding-block: 0.5rem;
+  }
+  .name {
+    text-transform: capitalize;
+    color: #555;
+    margin-bottom: 0.25rem;
+  }
+
+  .price {
+    color: #777;
+    letter-spacing: a.ls(base);
+  }
+}

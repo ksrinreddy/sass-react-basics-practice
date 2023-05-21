@@ -1,0 +1,22 @@
+@use "../../scss/abstracts/" as a;
+@use "../../scss/layout/" as l;
+@use "../../scss/components/" as c;
+
+.basics {
+  &.container {
+    text-align: center;
+  }
+  &__title {
+    margin-bottom: a.m(medium);
+    font-size: a.fs(large);
+  }
+
+  &__text {
+    margin-bottom: a.m(small);
+    text-transform: capitalize;
+  }
+
+  &__btn {
+    @include c.btn-bg();
+  }
+}

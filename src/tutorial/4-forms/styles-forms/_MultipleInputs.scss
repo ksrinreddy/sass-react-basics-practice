@@ -1,0 +1,78 @@
+@use "../../scss/abstracts/" as a;
+@use "../../scss/components/" as c;
+
+$background-color: aliceblue;
+
+.section-wrapper {
+  background: $background-color;
+  min-height: 100vh;
+  padding-top: 5rem;
+}
+
+.form {
+  background: #fff;
+  padding-inline: a.p(medium);
+  padding-top: a.p(large);
+  padding-bottom: a.p(base);
+  display: grid;
+  row-gap: a.g(base);
+  width: 90vw;
+  max-width: a.px-rem(560);
+  margin-inline: auto;
+  border-radius: a.br(medium);
+
+  .form-control {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    column-gap: a.g(medium);
+  }
+
+  .label {
+    justify-self: end;
+    font-size: a.fs(base);
+  }
+
+  .input {
+    border: none;
+    background: $background-color;
+    padding: a.p(x-small);
+    border-radius: a.br(small);
+  }
+
+  .submit-btn {
+    justify-self: center;
+    @include c.btn-bg(black);
+    margin-top: a.m(base);
+
+    &:hover {
+      background: lighten(#000000, 30);
+    }
+  }
+}
+
+.items-list {
+  margin-top: 3rem;
+  width: 90vw;
+  max-width: a.px-rem(560);
+  margin-inline: auto;
+  border-radius: a.br(medium);
+  display: grid;
+  row-gap: a.g(medium);
+}
+
+.item {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: a.p(base) a.p(medium);
+  border-radius: a.br(medium);
+
+  .name {
+    text-transform: capitalize;
+  }
+  .email {
+    color: rgba(#000, 0.7);
+  }
+}

@@ -1,0 +1,26 @@
+.is-loading {
+  padding: 4rem 1rem;
+  text-align: center;
+
+  &__text {
+    text-transform: capitalize;
+  }
+}
+
+.is-error {
+  padding: 4rem 1rem;
+  text-align: center;
+
+  &__text {
+    text-transform: capitalize;
+  }
+}
+
+.mr-user {
+  padding: 4rem 1rem;
+  text-align: center;
+
+  &__text {
+    text-transform: capitalize;
+  }
+}

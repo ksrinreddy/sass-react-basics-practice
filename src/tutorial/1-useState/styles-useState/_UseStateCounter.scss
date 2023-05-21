@@ -1,0 +1,67 @@
+@use "../../scss/abstracts/" as a;
+@use "../../scss/components/" as c;
+
+.counter {
+  padding-block: 3rem;
+  text-align: center;
+
+  &__title {
+    font-size: a.fs(large);
+    text-transform: capitalize;
+    margin-bottom: a.m(small);
+  }
+
+  &__value {
+    font-size: a.fs(48);
+    font-weight: a.fw(bold);
+  }
+
+  &__btn {
+    @include c.btn-bg();
+
+    &.decrease {
+      background: red;
+
+      &:hover {
+        background: darken(red, 10);
+      }
+    }
+    &.reset {
+      margin-inline: a.m(small);
+    }
+
+    &.increase {
+      background: blue;
+      &:hover {
+        background: darken(blue, 10);
+      }
+    }
+  }
+}
+
+.complex-counter {
+  padding-block: 3rem;
+  text-align: center;
+
+  &__title {
+    font-size: a.fs(large);
+    text-transform: capitalize;
+    margin-bottom: a.m(small);
+  }
+
+  &__value {
+    font-size: a.fs(48);
+    font-weight: a.fw(bold);
+  }
+
+  &__btn {
+    @include c.btn-bg();
+
+    &.increase-later {
+      background: blue;
+      &:hover {
+        background: darken(blue, 10);
+      }
+    }
+  }
+}

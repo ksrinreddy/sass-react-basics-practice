@@ -1,0 +1,22 @@
+@use "../../scss/abstracts/" as a;
+@use "../../scss/components/" as c;
+
+.form-useRef {
+  background: #fff;
+  padding: 2rem 0;
+  width: 90vw;
+  max-width: a.px-rem(500);
+  margin-inline: auto;
+  margin-top: 3rem;
+  text-align: center;
+
+  .input-value {
+    border: none;
+    background: a.$bg-lightblue;
+    padding: a.p(x-small) a.p(small);
+  }
+
+  .btn-submit {
+    @include c.btn-bg(#000);
+  }
+}

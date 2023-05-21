@@ -1,0 +1,15 @@
+@use "../../scss/abstracts/" as a;
+@use "../../scss/components/" as c;
+
+.shortcircuit {
+  margin-top: 4rem;
+  text-align: center;
+
+  .or-operator {
+    margin-bottom: 1rem;
+  }
+
+  .btn {
+    @include c.btn-bg(rgb(67, 95, 232));
+  }
+}

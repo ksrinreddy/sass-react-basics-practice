@@ -1,0 +1,151 @@
+body {
+  background: aliceblue;
+  color: #333333;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  background-repeat: no-repeat;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+}
+
+.navbar {
+  background: lightskyblue;
+}
+
+.nav-center {
+  width: 90vw;
+  max-width: 37.5rem;
+  margin-inline: auto;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-block: 1rem;
+}
+
+.home-center {
+  width: 90vw;
+  max-width: 37.5rem;
+  margin-inline: auto;
+  display: grid;
+  row-gap: 1rem;
+  margin-top: 2rem;
+}
+.home-center .info {
+  color: rgb(119, 160, 175);
+  font-size: 0.83rem;
+}
+
+.about-center {
+  width: 90vw;
+  max-width: 37.5rem;
+  margin-inline: auto;
+  display: grid;
+  row-gap: 1rem;
+  margin-top: 2rem;
+}
+.about-center .info {
+  color: rgb(119, 160, 175);
+  font-size: 0.83rem;
+}
+
+.people {
+  display: grid;
+  row-gap: 1.5rem;
+  margin-top: 3rem;
+  width: 90vw;
+  max-width: 37.5rem;
+  margin-inline: auto;
+}
+
+.single-person {
+  background: #fff;
+  padding: 0.7rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.single-person .name {
+  text-transform: capitalize;
+}
+.single-person .more-info {
+  font-size: 0.83rem;
+  color: rgb(74, 131, 195);
+}
+
+.error-page {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  margin-top: 3rem;
+}
+.error-page .error-text {
+  margin-bottom: 0.5rem;
+}
+.error-page .btn {
+  border: none;
+  background: skyblue;
+  color: #ffffff;
+  padding: 0.25rem 1rem;
+  border-radius: 0.1875rem;
+  text-transform: capitalize;
+  letter-spacing: 0.0625rem;
+}
+.error-page .btn:hover {
+  background: #5bbce4;
+  cursor: pointer;
+  transition: all, 300ms;
+}
+
+.person-page {
+  text-align: center;
+  margin-top: 3rem;
+}
+.person-page .name {
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+}
+.person-page .btn {
+  border: none;
+  background: skyblue;
+  color: #ffffff;
+  padding: 0.25rem 1rem;
+  border-radius: 0.1875rem;
+  text-transform: capitalize;
+  letter-spacing: 0.0625rem;
+}
+.person-page .btn:hover {
+  background: #5bbce4;
+  cursor: pointer;
+  transition: all, 300ms;
+}/*# sourceMappingURL=styles.css.map */

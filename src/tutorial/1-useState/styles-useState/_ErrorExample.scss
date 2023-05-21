@@ -1,0 +1,25 @@
+@use "../../scss/abstracts/" as a;
+@use "../../scss/layout/" as l;
+@use "../../scss/components/" as c;
+
+.error {
+  &.container {
+    background: a.$b-white;
+    padding: a.p(base);
+    margin-top: a.m(large);
+  }
+
+  &__title {
+    text-transform: capitalize;
+    margin-bottom: a.m(medium);
+  }
+
+  &__info-text {
+    text-transform: capitalize;
+    margin-bottom: a.m(small);
+  }
+
+  &__btn {
+    @include c.btn-bg();
+  }
+}

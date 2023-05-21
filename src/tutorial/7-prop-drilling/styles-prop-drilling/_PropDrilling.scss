@@ -1,0 +1,39 @@
+@use "../../scss/abstracts/" as a;
+
+.section-prop-drilling {
+  margin-top: 4rem;
+
+  .title {
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: a.m(large);
+  }
+
+  .list {
+    width: 90vw;
+    max-width: a.px-rem(500);
+    margin-inline: auto;
+  }
+
+  .single-item {
+    background: #fff;
+    padding: a.p(small) a.p(medium);
+    margin-bottom: a.m(medium);
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .btn-remove {
+    background: none;
+    border: none;
+    color: brown;
+
+    &:hover {
+      cursor: pointer;
+      color: lighten(brown, 10);
+      transition: all 300ms;
+    }
+  }
+}

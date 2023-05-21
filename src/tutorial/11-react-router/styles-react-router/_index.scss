@@ -1,0 +1,100 @@
+@use "../../../scss/abstracts/" as a;
+@use "../../../scss/components/" as c;
+
+.navbar {
+  background: lightskyblue;
+}
+
+.nav-center {
+  width: 90vw;
+  max-width: a.px-rem(600);
+  margin-inline: auto;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-block: 1rem;
+}
+
+.home-center {
+  width: 90vw;
+  max-width: a.px-rem(600);
+  margin-inline: auto;
+  display: grid;
+  row-gap: 1rem;
+  margin-top: 2rem;
+
+  .info {
+    color: rgb(119, 160, 175);
+    font-size: a.fs(small);
+  }
+}
+.about-center {
+  width: 90vw;
+  max-width: a.px-rem(600);
+  margin-inline: auto;
+  display: grid;
+  row-gap: 1rem;
+  margin-top: 2rem;
+
+  .info {
+    color: rgb(119, 160, 175);
+    font-size: a.fs(small);
+  }
+}
+
+.people {
+  display: grid;
+  row-gap: 1.5rem;
+  margin-top: 3rem;
+  width: 90vw;
+  max-width: a.px-rem(600);
+  margin-inline: auto;
+}
+
+.single-person {
+  background: #fff;
+  padding: 0.7rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .name {
+    text-transform: capitalize;
+  }
+
+  .more-info {
+    font-size: a.fs(small);
+    color: rgb(74, 131, 195);
+  }
+}
+
+.error-page {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  margin-top: 3rem;
+  .error-text {
+    margin-bottom: 0.5rem;
+  }
+
+  .btn {
+    @include c.btn-bg(skyblue);
+  }
+}
+
+.person-page {
+  text-align: center;
+  margin-top: 3rem;
+
+  .name {
+    margin-bottom: 0.5rem;
+    text-transform: capitalize;
+  }
+
+  .btn {
+    @include c.btn-bg(skyblue);
+  }
+}
